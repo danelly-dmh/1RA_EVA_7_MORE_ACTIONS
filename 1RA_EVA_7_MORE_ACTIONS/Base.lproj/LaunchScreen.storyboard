@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="320" verticalCompressionResistancePriority="320" placeholderIntrinsicWidth="250" placeholderIntrinsicHeight="260" image="7fe8a716b1855a12d168cad39b6be43d" translatesAutoresizingMaskIntoConstraints="NO" id="2i8-pS-cwE">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="4jh-T4-EjB"/>
+                                    <constraint firstAttribute="height" constant="260" id="gcf-WH-zR7"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4jh-T4-EjB"/>
+                                        <exclude reference="gcf-WH-zR7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4jh-T4-EjB"/>
+                                        <include reference="gcf-WH-zR7"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2i8-pS-cwE" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="65" id="049-y9-rwA"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="2i8-pS-cwE" secondAttribute="bottom" constant="255" id="2E1-FI-gun"/>
+                            <constraint firstItem="2i8-pS-cwE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="55" id="CcR-LI-d5h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2i8-pS-cwE" secondAttribute="trailing" constant="55" id="Hcx-6K-mcd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2i8-pS-cwE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="049-y9-rwA"/>
+                                <exclude reference="CcR-LI-d5h"/>
+                                <exclude reference="Hcx-6K-mcd"/>
+                                <exclude reference="2E1-FI-gun"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2i8-pS-cwE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="049-y9-rwA"/>
+                                <include reference="CcR-LI-d5h"/>
+                                <include reference="Hcx-6K-mcd"/>
+                                <include reference="2E1-FI-gun"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="7fe8a716b1855a12d168cad39b6be43d" width="500" height="519"/>
+    </resources>
+</document>
